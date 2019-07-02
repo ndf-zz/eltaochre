@@ -187,11 +187,9 @@ dorst:	wrax	ushot,1.0	; save to the reset undershoot record
 	sof	0.0,0.45	; load offset
 	rdax	modctl,-0.9	; subtract modulation control
 	and	$ff8000		; mask lower bits
-	skp	GEZ,dolfo	; if positive, randomise
+	skp	GEZ,dolfo	; if positive: LFO, otherwise RND
 	wrax	temp,0.0	; save and clear
-
-; grab next random value from LFSR
-	rdax	lfsr,0.5	; shift lfsr one bit and save
+	rdax	lfsr,0.5	; shift lfsr one bit right
 	wrax	lrtmp,0.0	; save and clear
 	ldax	lfsr		; re-load original value
 	and	$000001		; fetch LSB
