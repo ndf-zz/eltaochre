@@ -25,8 +25,8 @@
 # Bank file and information strings
 BANKFILE = bank
 BANKNO = 0				# Dervish bank number 0 - 11 decimal
-BANKNAME =  "OCHRE - Reversers       "	# 20 chars for dervish, 24 for zDSP
-BANKINFO1 = "Reverse delays for Elta "	# zDSP bank info strings, 24 chars
+BANKNAME =  "OCHRE - Reversers       "	# 20 chars for dervish
+BANKINFO1 = "Reverse delays for Elta "
 BANKINFO2 = " (CC0) - Public Domain  "
 BANKINFO3 = " <ndf@metarace.com.au>  "
 
@@ -61,10 +61,6 @@ $(DERVISHBANK): $(TARGET) $(DVTEXTS)
 %.dvt: %.asm
 	$(DRVTXT) $< $@
 	dd if=$@ bs=84 count=1 seek=$(shell echo $$(( 4117 + $(firstword $(subst _, ,$<)) * 84 ))) oflag=seek_bytes conv=notrunc of=$(DERVISHBANK)
-
-%.zdt: %.asm
-	$(ZDSPTXT) $< $@
-	dd if=$@ bs=48 count=1 seek=$(firstword $(subst _, ,$<)) conv=notrunc of=$(ZDSPDISPLAY)
 
 %.prg: %.asm
 	$(AS) $(ASFLAGS) $< $@
