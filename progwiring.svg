@@ -1,0 +1,120 @@
+<?xml version="1.0" standalone="no"?>
+<!-- Creator: fig2dev Version 3.2.6a -->
+<!-- CreationDate: 2019-07-02 17:46:48 -->
+<!-- Magnification: 2.1 -->
+<svg	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="437pt" height="235pt"
+	viewBox="2474 899 3467 1858">
+<g fill="none">
+<!-- Circle -->
+<circle cx="3060" cy="2115" r="45"
+	stroke="#000000" stroke-width="8px"/>
+<!-- Circle -->
+<circle cx="3060" cy="1980" r="45"
+	stroke="#000000" stroke-width="8px"/>
+<!-- Circle -->
+<circle cx="3060" cy="1845" r="45"
+	stroke="#000000" stroke-width="8px"/>
+<!-- Circle -->
+<circle cx="3060" cy="1710" r="45"
+	stroke="#000000" stroke-width="8px"/>
+<!-- Line -->
+<rect x="2970" y="1620" width="180" height="585"
+	stroke="#000000" stroke-width="8px"/>
+<!-- Circle -->
+<circle cx="5310" cy="1845" r="23"
+	stroke="#000000" stroke-width="8px"/>
+<!-- Circle -->
+<circle cx="5625" cy="1778" r="68"
+	stroke="#000000" stroke-width="8px"/>
+<!-- Circle -->
+<circle cx="3330" cy="1980" r="23" fill="#000000"/>
+<!-- Circle -->
+<circle cx="3735" cy="1710" r="23" fill="#000000"/>
+<!-- Circle -->
+<circle cx="3510" cy="2655" r="23" fill="#000000"/>
+<!-- Circle -->
+<circle cx="3510" cy="1845" r="23" fill="#000000"/>
+<!-- Line -->
+<rect x="4500" y="1395" width="270" height="90"
+	stroke="#000000" stroke-width="8px"/>
+<!-- Line -->
+<rect x="4500" y="1530" width="270" height="90"
+	stroke="#000000" stroke-width="8px"/>
+<!-- Line -->
+<rect x="4500" y="1665" width="270" height="90"
+	stroke="#000000" stroke-width="8px"/>
+<!-- Line -->
+<rect x="4500" y="1800" width="270" height="90"
+	stroke="#000000" stroke-width="8px"/>
+<!-- Line -->
+<rect x="4500" y="1935" width="270" height="90"
+	stroke="#000000" stroke-width="8px"/>
+<!-- Line -->
+<rect x="4500" y="2070" width="270" height="90"
+	stroke="#000000" stroke-width="8px"/>
+<!-- Line -->
+<polygon points=" 4455,1350 4455,2205 4815,2205 4815,2250 5760,2250 5760,1305 4815,1305 4815,1350
+"
+	stroke="#000000" stroke-width="8px"/>
+<!-- Line -->
+<rect x="5175" y="1665" width="180" height="225"
+	stroke="#000000" stroke-width="8px"/>
+<!-- Line -->
+<polyline points=" 3195,2115 4410,2115"
+	stroke="#000000" stroke-width="8px"/>
+<!-- Line -->
+<polyline points=" 3195,1980 4410,1980"
+	stroke="#000000" stroke-width="8px"/>
+<!-- Line -->
+<polyline points=" 3195,1845 4140,1845 4275,1710 4410,1710"
+	stroke="#000000" stroke-width="8px"/>
+<!-- Line -->
+<polyline points=" 3195,1710 4140,1710 4275,1845 4410,1845"
+	stroke="#000000" stroke-width="8px"/>
+<!-- Line -->
+<polyline points=" 3510,1845 3510,2655 3735,2655 3735,1710"
+	stroke="#000000" stroke-width="8px"/>
+<!-- Line -->
+<polyline points=" 3330,1980 3330,2655 3510,2655"
+	stroke="#000000" stroke-width="8px"/>
+<!-- Line -->
+<rect x="3240" y="2205" width="1125" height="540"
+	stroke="#000000" stroke-width="8px" stroke-dasharray="40 40"/>
+<!-- Text -->
+<text xml:space="preserve" x="4860" y="2160" fill="#000000" font-family="Helvetica" font-style="normal" font-weight="normal" font-size="84" text-anchor="start">0V</text>
+<!-- Text -->
+<text xml:space="preserve" x="4860" y="2025" fill="#000000" font-family="Helvetica" font-style="normal" font-weight="normal" font-size="84" text-anchor="start">3V3</text>
+<!-- Text -->
+<text xml:space="preserve" x="4860" y="1890" fill="#000000" font-family="Helvetica" font-style="normal" font-weight="normal" font-size="84" text-anchor="start">SCL</text>
+<!-- Text -->
+<text xml:space="preserve" x="4860" y="1755" fill="#000000" font-family="Helvetica" font-style="normal" font-weight="normal" font-size="84" text-anchor="start">SDA</text>
+<!-- Text -->
+<text xml:space="preserve" x="4860" y="1620" fill="#000000" font-family="Helvetica" font-style="normal" font-weight="normal" font-size="84" text-anchor="start">0V</text>
+<!-- Text -->
+<text xml:space="preserve" x="4860" y="1485" fill="#000000" font-family="Helvetica" font-style="normal" font-weight="normal" font-size="84" text-anchor="start">0V</text>
+<!-- Text -->
+<text xml:space="preserve" x="2880" y="2160" fill="#000000" font-family="Helvetica" font-style="normal" font-weight="normal" font-size="84" text-anchor="end">0V</text>
+<!-- Text -->
+<text xml:space="preserve" x="2880" y="2025" fill="#000000" font-family="Helvetica" font-style="normal" font-weight="normal" font-size="84" text-anchor="end">3V3</text>
+<!-- Text -->
+<text xml:space="preserve" x="2880" y="1890" fill="#000000" font-family="Helvetica" font-style="normal" font-weight="normal" font-size="84" text-anchor="end">SDA</text>
+<!-- Text -->
+<text xml:space="preserve" x="2880" y="1755" fill="#000000" font-family="Helvetica" font-style="normal" font-weight="normal" font-size="84" text-anchor="end">SCL</text>
+<!-- Text -->
+<text xml:space="preserve" x="5085" y="1170" fill="#000000" font-family="Helvetica" font-style="normal" font-weight="normal" font-size="108" text-anchor="middle">Console cartridge*</text>
+<!-- Text -->
+<text xml:space="preserve" x="2925" y="1170" fill="#000000" font-family="Helvetica" font-style="normal" font-weight="normal" font-size="108" text-anchor="middle">I2C</text>
+<!-- Text -->
+<text xml:space="preserve" x="3825" y="2475" fill="#000000" font-family="Helvetica" font-style="normal" font-weight="normal" font-size="84" text-anchor="start">47k</text>
+<!-- Text -->
+<text xml:space="preserve" x="3825" y="2655" fill="#000000" font-family="Helvetica" font-style="normal" font-weight="normal" font-size="84" text-anchor="start">pull-up</text>
+<!-- Line -->
+<rect x="3465" y="2295" width="90" height="225" fill="#ffffff"
+	stroke="#000000" stroke-width="8px"/>
+<!-- Line -->
+<rect x="3690" y="2295" width="90" height="225" fill="#ffffff"
+	stroke="#000000" stroke-width="8px"/>
+</g>
+</svg>
