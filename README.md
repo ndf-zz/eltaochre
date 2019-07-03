@@ -1,16 +1,15 @@
 # eltaochre
 
-A reverse delay program bank for the Elta Console effect unit.
-
 
 ## OVERVIEW:
 
 Elta Ochre is a collection of three related reverse delay effects
-for use with the Elta console and the Spin Semi FV-1 reverb IC. 
+for use with the Elta Console and the Spin Semiconductor FV-1 reverb IC. 
+
 
 ## PROGRAMS:
 
-### 1. One-shot Long Time
+### 1. One-shot Long
 
 - FV-1 Program: 5
 - Source File: 5_oslf.asm
@@ -23,7 +22,7 @@ feedback. Delay time ranges from approximately 0.06 seconds
 to just under 1 second, with reverse playback times about
 half the delay time.
 
-### 2. One-shot Short Time
+### 2. One-shot Short
 
 - FV-1 Program: 7
 - Source File: 7_oslf.asm
@@ -61,6 +60,28 @@ and ADCR is ignored. DACL and DACR written with a 100% wet
 effect signal.
 
 
+## BUILD:
+
+Run make to assemble the program:
+
+	$ make help
+	Targets:
+		bank [default]	assemble sources into binary bank file
+		program		program bank for Elta Console via i2c
+		verify		verify bank for Elta Console via i2c
+		clean		remove all intermediate files
+
+
+## REQUIREMENTS:
+
+Building and programming an Elta Console cartridge depends on the
+following tools which should be in your PATH:
+
+- [asfv1](https://pypi.org/project/asfv1/) FV-1 assembler (install with: pip3 install asfv1)
+- dd
+- [fv1-eeprom-host](http://gbiswell.myzen.co.uk/dervish/eeprom-programmer/) An I2C eeprom programmer for the [dervish](http://gbiswell.myzen.co.uk/dervish/Readme_First.html)
+
+
 ## PROGRAMMING:
 
 Connect the Elta Console cartridge to an I2C programmer as shown
@@ -76,7 +97,7 @@ side of the cart.
 ## LICENSE:
 
 To the extent possible under law, the author(s) have dedicated
-all copyright and related and neighboring rights to this software
+all copyright and related and neighbouring rights to this software
 to the public domain worldwide. This software is distributed
 without any warranty.
 
@@ -85,4 +106,5 @@ without any warranty.
 
 - Elta Console: <https://www.eltamusic.com/console>
 - FV-1 assembler: <https://github.com/ndf-zz/asfv1>
+- Dervish eeprom programmer: <http://gbiswell.myzen.co.uk/dervish/Readme_First.html>
 - Spin FV-1 website: <http://spinsemi.com/products.html>
