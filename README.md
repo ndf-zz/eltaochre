@@ -53,10 +53,12 @@ reverse playback is finished.
 
 ## CONNECTIONS:
 
-The Elta Console is a mono input, mono output effect with the
-input channel connected to ADCL. ADCL is read as the effect
-input and ADCR is ignored. Both DACL and DACR are connected
-to the output and are both written with a 100% wet effect signal.
+The Elta Console is a mono input, mono output effect pedal
+based around a Spin Semiconductor FV-1. The input channel is
+connected to ADCL on the FV-1 and both DACR and DACL are connected
+to the output. In each program, ADCL is read as the effect input
+and ADCR is ignored. DACL and DACR written with a 100% wet
+effect signal.
 
 
 ## PROGRAMMING:
@@ -67,7 +69,8 @@ resistors on the I2C bus, the dashed section should be omitted.
 
 ![Programmer Wiring Diagram](progwiring.svg "Programmer Wiring")
 
-\* Note: When using a socket, Elta Console cartridges are reversible.
+\* Note: Elta Console cartridges are reversible, use just one
+side of the cart.
 
 
 ## LICENSE:
