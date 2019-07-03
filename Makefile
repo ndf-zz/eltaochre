@@ -15,7 +15,9 @@
 # --
 #
 # Input files:
-#	N_prog.asm		N is a program number from 0-7
+#	5_prog.asm		Console program #1
+#	7_prog.asm		Console program #2
+#	3_prog.asm		Console program #3
 #
 # Output files:
 #	bank.bin		FV-1 program bank binary
@@ -43,6 +45,7 @@ DERVISHTTY = /dev/ttyACM3
 
 # --
 TARGET = $(addsuffix .bin,$(BANKFILE))
+CHECKFILE = $(addsuffix .chk,$(BANKFILE))
 DERVISHBANK = $(TARGET:.bin=.bnk)
 SOURCES = $(wildcard [01234567]_*.asm)
 PROGS = $(SOURCES:.asm=.prg)
@@ -51,7 +54,7 @@ DVTEXTS = $(SOURCES:.asm=.dvt)
 .PHONY: files
 files:	$(TARGET) $(DERVISHBANK)
 
-$(TARGET):	$(PROGS)
+$(TARGET): $(PROGS)
 
 $(DERVISHBANK): $(TARGET) $(DVTEXTS)
 	dd if=$(TARGET) bs=512 count=8 conv=notrunc of=$(DERVISHBANK)
@@ -70,20 +73,30 @@ $(DERVISHBANK): $(TARGET) $(DVTEXTS)
 dprog: $(DERVISHBANK)
 	$(DERVISHPROG) -v -n 4789 -o $(shell echo $$(( 5120 * $(BANKNO) ))) -p 128 -t $(DERVISHTTY) -f $(DERVISHBANK) -c W
 
-.PHONY: eprog
-eprog: $(TARGET)
-	$(DERVISHPROG) -v -n 4096 -o 0 -p 32 -t $(DERVISHTTY) -f $(TARGET) -c W
+.PHONY: program
+program: $(TARGET)
+	$(DERVISHPROG) -n 4096 -o 0 -p 32 -t $(DERVISHTTY) -f $(TARGET) -c W
+
+.PHONY: $(CHECKFILE)
+$(CHECKFILE):
+	$(DERVISHPROG) -n 4096 -o 0 -p 32 -t $(DERVISHTTY) -f $(CHECKFILE) -c R
+
+.PHONY: verify
+verify: $(TARGET) $(CHECKFILE)
+	cmp -b $(CHECKFILE) $(TARGET)
+	@echo Verify OK
 
 .PHONY: help
 help:
 	@echo
 	@echo Targets:
 	@echo "	files [default]	assemble sources into bank and display files"
+	@echo "	program		program bank for Elta Console via i2c"
+	@echo "	verify		verify bank for Elta Console via i2c"
 	@echo "	dprog		program bank on a (u)dervish via i2c"
-	@echo "	eprog		program bank for Elta Console via i2c"
 	@echo "	clean		remove all intermediate files"
 	@echo
 
 .PHONY: clean
 clean:
-	-rm -f $(TARGET) $(DERVISHBANK) $(PROGS) $(DVTEXTS)
+	-rm -f $(TARGET) $(CHECKFILE) $(DERVISHBANK) $(PROGS) $(DVTEXTS)
