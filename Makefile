@@ -24,7 +24,7 @@
 #
 
 # Bank file and information strings
-BANKFILE = bank
+BANKFILE = eltaochre
 
 # FV-1 assembler and flags
 AS = asfv1
@@ -74,4 +74,4 @@ help:
 
 .PHONY: clean
 clean:
-	-rm -f $(TARGET) $(CHECKFILE) $(DERVISHBANK) $(PROGS) $(DVTEXTS)
+	-rm -f $(CHECKFILE) $(DERVISHBANK) $(PROGS) $(DVTEXTS)
