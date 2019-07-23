@@ -76,12 +76,12 @@ EQU	curin	REG12		; current delay input sample
 EQU	previn	REG13		; previous delay input sample
 EQU	lrtmp	REG15		; lfsr temp value (overlaps with temp)
 
-; Signature: EC-FRLF v1.00a (CC0)
+; Signature: EC-FRLF v1.00b (CC0)
 	skp	0,start
 	raw	$45432d46
 	raw	$524c4620
 	raw	$76312e30
-	raw	$30612028
+	raw	$30622028
 	raw	$43433029
 
 ; Initialisation

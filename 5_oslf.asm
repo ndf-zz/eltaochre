@@ -76,12 +76,12 @@ EQU	npbe	REG15		; next playback end point
 EQU	cpbe	REG16		; current playback end point
 EQU	rfb	REG17		; reverse feedback signal
 
-; Signature: EC-OSLF v1.00a (CC0)
+; Signature: EC-OSLF v1.00b (CC0)
 	skp	0,start
 	raw	$45432d4f
 	raw	$534c4620
 	raw	$76312e30
-	raw	$30612028
+	raw	$30622028
 	raw	$43433029
 start:
 
