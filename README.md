@@ -78,7 +78,6 @@ Building and programming an Elta Console cartridge depends on the
 following tools which should be in your PATH:
 
 - [asfv1](https://pypi.org/project/asfv1/) FV-1 assembler (install with: pip3 install asfv1)
-- dd
 - [fv1-eeprom-host](http://gbiswell.myzen.co.uk/dervish/eeprom-programmer/) An I2C eeprom programmer for the [dervish](http://gbiswell.myzen.co.uk/dervish/Readme_First.html)
 
 
