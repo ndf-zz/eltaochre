@@ -1,13 +1,13 @@
 # eltaochre
 
 
-## OVERVIEW:
+## Overview
 
 Elta Ochre is a collection of three related reverse delay effects
 for use with the Elta Console and the Spin Semiconductor FV-1 reverb IC. 
 
 
-## PROGRAMS:
+## Programs
 
 ### 1. One-shot Long
 
@@ -50,7 +50,7 @@ Modulation of delay time is staged so changes happen after each
 reverse playback is finished.
 
 
-## CONNECTIONS:
+## Connections
 
 The Elta Console is a mono input, mono output effect pedal
 based around a Spin Semiconductor FV-1. The input channel is
@@ -60,7 +60,7 @@ and ADCR is ignored. DACL and DACR written with a 100% wet
 effect signal.
 
 
-## BUILD:
+## Build
 
 Run make to assemble the program:
 
@@ -72,16 +72,16 @@ Run make to assemble the program:
 		clean		remove all intermediate files
 
 
-## REQUIREMENTS:
+## Requirements
 
 Building and programming an Elta Console cartridge depends on the
 following tools which should be in your PATH:
 
-- [asfv1](https://pypi.org/project/asfv1/) FV-1 assembler (install with: pip3 install asfv1)
+- [asfv1](https://pypi.org/project/asfv1/) FV-1 assembler (install with: pip install asfv1)
 - [fv1-eeprom-host](http://gbiswell.myzen.co.uk/dervish/eeprom-programmer/) An I2C eeprom programmer for the [dervish](http://gbiswell.myzen.co.uk/dervish/Readme_First.html)
 
 
-## PROGRAMMING:
+## Programming
 
 Connect the Elta Console cartridge to an I2C programmer as shown
 in the following diagram. If the programmer already includes pull-up
@@ -93,7 +93,7 @@ resistors on the I2C bus, the dashed section should be omitted.
 side of the cart.
 
 
-## LICENSE:
+## License
 
 To the extent possible under law, the author(s) have dedicated
 all copyright and related and neighbouring rights to this software
@@ -101,7 +101,7 @@ to the public domain worldwide. This software is distributed
 without any warranty.
 
 
-## LINKS:
+## Links
 
 - Elta Console: <https://www.eltamusic.com/console>
 - FV-1 assembler: <https://github.com/ndf-zz/asfv1>
