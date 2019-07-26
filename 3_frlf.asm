@@ -45,7 +45,7 @@ EQU	STEPF	$000100		; forward movement offset: +1 samples
 EQU	STEPR	$000200		; reverse movement offset: +2 samples
 EQU	SATPOS	$7fffff		; maximum positive saturated value
 EQU	SATNEG	$800000		; minimum negative saturated value
-EQU	ULTIMD	$7fff00		; ulitmate sample delay address
+EQU	ULTIMD	$7fff00		; ultimate sample delay address
 EQU	PENULD	$7ffe00		; penultimate sample delay address
 EQU	POTMSK	$7fc000		; 9 bit pot mask
 EQU	CDMULT	-0.333333333333	; cube distortion multiplier
