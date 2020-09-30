@@ -32,7 +32,7 @@ ASFLAGS = -q -b
 
 # I2C eeprom programmer
 DERVISHPROG = fv1-eeprom-host
-DERVISHTTY = /dev/ttyACM3
+DERVISHTTY = /dev/ttyACM2
 
 # --
 TARGET = $(addsuffix .bin,$(BANKFILE))
