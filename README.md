@@ -1,5 +1,7 @@
 # eltaochre
 
+Archived: 2026-05-13
+Moved to: https://codeberg.org/ndf-zz/eltaochre
 
 ## Overview
 
